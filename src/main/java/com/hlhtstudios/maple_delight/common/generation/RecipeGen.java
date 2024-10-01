@@ -36,6 +36,12 @@ public class RecipeGen extends FabricRecipeProvider {
                 .criterion(hasItem(Maples.MAPLE_PLANKS), conditionsFromItem(Maples.MAPLE_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(Maples.MAPLE_TRAPDOOR)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, Maples.MAPLE_SLAB, 6)
+                .pattern("SSS")
+                .input('S', Maples.MAPLE_PLANKS)
+                .criterion(hasItem(Maples.MAPLE_PLANKS), conditionsFromItem(Maples.MAPLE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(Maples.MAPLE_SLAB)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Maples.MAPLE_FENCE, 3)
                 .pattern("SXS")
                 .pattern("SXS")

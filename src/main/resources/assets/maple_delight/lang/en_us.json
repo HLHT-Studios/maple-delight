@@ -33,5 +33,7 @@
   "item.maple_delight.maple_sap_bucket": "Maple Sap Bucket",
   "item.maple_delight.maple_cookie": "Maple Syrup Cookie",
   "item.maple_delight.maple_pancake": "Maple Syrup Pancake",
-  "itemGroup.food": "Maple Delight Food"
+  "itemGroup.food": "Maple Delight Food",
+
+  "biome.maple_delight.maple_forest": "Maple Forest"
 }
