@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "maple_delight",
+  "version": "${version}",
+  "name": "Maple Delight",
+  "description": "Enjoy your pancakes with the maple trees",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.hlhtstudios.maple_delight.client.Maple_delightClient"
+    ],
+    "main": [
+      "com.hlhtstudios.maple_delight.Maple_delight"
+    ],
+    "fabric-datagen": [
+      "com.hlhtstudios.maple_delight.common.generation.DataGeneration"
+    ],
+    "datagen": [
+      "com.hlhtstudios.maple_delight.common.generation.DataGeneration"
+    ],
+    "terrablender": [
+      "com.hlhtstudios.maple_delight.Maple_delight"
+    ]
+  },
+  "mixins": [
+    "maple_delight.mixins.json",
+    {
+      "config": "maple_delight.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

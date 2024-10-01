@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "maple_delight:block/maple_badge",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "maple_delight:block/maple_badge",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "maple_delight:block/maple_badge"
+    },
+    "facing=west": {
+      "model": "maple_delight:block/maple_badge",
+      "y": 90
+    }
+    }
+  }
