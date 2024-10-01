@@ -5,6 +5,7 @@ import com.hlhtstudios.maple_delight.common.particle.MapleParticle;
 import com.hlhtstudios.maple_delight.common.util.MapleTags;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BeehiveBlockEntity;
+import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemPlacementContext;
@@ -16,6 +17,7 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
+import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
@@ -33,7 +35,7 @@ import net.minecraft.world.WorldView;
 import net.minecraft.world.event.GameEvent;
 import org.jetbrains.annotations.Nullable;
 
-public class TreeTapperBlock extends CocoaBlock {
+public class TreeTapperBlock extends HorizontalFacingBlock {
     public static final int MAX_AGE = 2;
     public static final IntProperty AGE = Properties.AGE_2;
 
@@ -123,11 +125,6 @@ public class TreeTapperBlock extends CocoaBlock {
     }
 
     @Override
-    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state, boolean isClient) {
-        return false;
-    }
-
-    @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         ItemStack itemStack = player.getStackInHand(hand);
         int i = (Integer)state.get(AGE);
@@ -157,6 +154,16 @@ public class TreeTapperBlock extends CocoaBlock {
         } else {
             return super.onUse(state, world, pos, player, hand, hit);
         }
+    }
+
+    @Override
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(FACING, AGE);
+    }
+
+    @Override
+    public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
+        return false;
     }
 
 

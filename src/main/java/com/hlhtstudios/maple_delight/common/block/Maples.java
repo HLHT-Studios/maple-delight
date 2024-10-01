@@ -115,13 +115,13 @@ public class Maples {
     public static final Identifier HAZEL_HANGING_SIGN_GUI_TEXTURE = new Identifier(Maple_delight.MOD_ID, "textures/gui/hanging_signs/hazel");
 
     public static final Block STANDING_MAPLE_SIGN = Registry.register(Registries.BLOCK, new Identifier(Maple_delight.MOD_ID, "maple_standing_sign"),
-            new TerraformSignBlock(MAPLE_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
+            new TerraformSignBlock(MAPLE_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN)));
     public static final Block WALL_MAPLE_SIGN = Registry.register(Registries.BLOCK, new Identifier(Maple_delight.MOD_ID, "maple_wall_sign"),
-            new TerraformWallSignBlock(MAPLE_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
+            new TerraformWallSignBlock(MAPLE_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_SIGN)));
     public static final Block HANGING_MAPLE_SIGN = Registry.register(Registries.BLOCK, new Identifier(Maple_delight.MOD_ID, "maple_hanging_sign"),
-            new TerraformHangingSignBlock(MAPLE_HANGING_SIGN_TEXTURE, MAPLE_HANGING_SIGN_GUI_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN)));
+            new TerraformHangingSignBlock(MAPLE_HANGING_SIGN_TEXTURE, MAPLE_HANGING_SIGN_GUI_TEXTURE, FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN)));
     public static final Block WALL_HANGING_MAPLE_SIGN = Registry.register(Registries.BLOCK, new Identifier(Maple_delight.MOD_ID, "maple_wall_hanging_sign"),
-            new TerraformWallHangingSignBlock(MAPLE_HANGING_SIGN_TEXTURE, MAPLE_HANGING_SIGN_GUI_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN)));
+            new TerraformWallHangingSignBlock(MAPLE_HANGING_SIGN_TEXTURE, MAPLE_HANGING_SIGN_GUI_TEXTURE, FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN)));
 
     public static final BlockFamily MAPLE_FAMILY = BlockFamilies.register(MAPLE_PLANKS)
             .sign(STANDING_MAPLE_SIGN, WALL_MAPLE_SIGN)
