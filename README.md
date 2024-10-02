@@ -6,7 +6,7 @@ It adds some new items and blocks around the Maple.**
 
 ## New biome:
 ### Maple Forest:
-Maple trees and red maple tress will naturely grow in this biome.
+Maple trees and red maple tress will naturally grow in this biome.
 
 ![Mod preview](https://cdn.modrinth.com/data/cached_images/00874cc3a5cb82357aa35bbf12810b676ee9d8a6.jpeg)
 
@@ -18,4 +18,4 @@ Maple trees and red maple tress will naturely grow in this biome.
 - Tree tapper: use to get maple sap from maple trees.
 ## New food:
 - Some new food with maple syrup. (Still in progress)
-## If you have any idea about this mod, you can tell me on the Github
+## If you have any idea about this mod, you can tell me on the GitHub
