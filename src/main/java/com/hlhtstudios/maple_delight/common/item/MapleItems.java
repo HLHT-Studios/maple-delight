@@ -2,7 +2,10 @@ package com.hlhtstudios.maple_delight.common.item;
 
 import com.hlhtstudios.maple_delight.Maple_delight;
 import com.hlhtstudios.maple_delight.common.block.Maples;
+import com.hlhtstudios.maple_delight.common.entity.Boats;
 import com.hlhtstudios.maple_delight.common.fluid.MapleSyrupFluid;
+import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
+import com.terraformersmc.terraform.boat.impl.item.TerraformBoatItem;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -33,7 +36,7 @@ public class MapleItems {
             .alwaysEdible()
             // The duration is in ticks, 20 ticks = 1 second
             .hunger(3)
-            .saturationModifier(3.0f)
+            .saturationModifier(1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20 * 20, 0), 1.0f)
             .build();
 
@@ -41,7 +44,7 @@ public class MapleItems {
             .alwaysEdible()
             // The duration is in ticks, 20 ticks = 1 second
             .hunger(6)
-            .saturationModifier(6.0f)
+            .saturationModifier(1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20 * 20, 0), 1.0f)
             .build();
 
@@ -49,7 +52,7 @@ public class MapleItems {
             .alwaysEdible()
             // The duration is in ticks, 20 ticks = 1 second
             .hunger(10)
-            .saturationModifier(10.0f)
+            .saturationModifier(1.5f)
             .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20 * 20, 0), 1.0f)
             .build();
 
@@ -60,9 +63,9 @@ public class MapleItems {
             .build();
 
     public static final Item MAPLE_SAP_BUCKET = register("maple_sap_bucket",
-            new MilkBucketItem(new FabricItemSettings().maxCount(64).food(SAP_FOOD_COMPONENT)));
+            new MilkBucketItem(new FabricItemSettings().maxCount(64).food(SAP_FOOD_COMPONENT).recipeRemainder(Items.BUCKET)));
     public static final Item MAPLE_SYRUP = register("maple_syrup",
-            new HoneyBottleItem(new FabricItemSettings().maxCount(64).food(SYRUP_FOOD_COMPONENT)));
+            new HoneyBottleItem(new FabricItemSettings().maxCount(64).food(SYRUP_FOOD_COMPONENT).recipeRemainder(Items.GLASS_BOTTLE)));
     public static final Item MAPLE_COOKIE = register("maple_cookie",
             new Item(new FabricItemSettings().maxCount(64).food(SYRUP_FOOD_COMPONENT_MIN)));
     public static final Item SYRUP_PANCAKE = register("maple_syrup_pancake",
@@ -73,4 +76,8 @@ public class MapleItems {
 
     public static final Item HANGING_MAPLE_SIGN = register("maple_hanging_sign",
             new HangingSignItem(Maples.HANGING_MAPLE_SIGN, Maples.WALL_HANGING_MAPLE_SIGN, new FabricItemSettings().maxCount(16)));
+
+    public static final Item MAPLE_BOAT = TerraformBoatItemHelper.registerBoatItem(Boats.MAPLE_BOAT_ID, Boats.MAPLE_BOAT_KEY, false);
+    public static final Item MAPLE_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(Boats.MAPLE_CHEST_BOAT_ID, Boats.MAPLE_BOAT_KEY, true);
+
 }

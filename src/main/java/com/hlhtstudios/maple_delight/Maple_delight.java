@@ -3,6 +3,8 @@ package com.hlhtstudios.maple_delight;
 import com.hlhtstudios.maple_delight.common.block.MapleFluidBlock;
 import com.hlhtstudios.maple_delight.common.block.Maples;
 import com.hlhtstudios.maple_delight.common.block.Special;
+import com.hlhtstudios.maple_delight.common.entity.Boats;
+import com.hlhtstudios.maple_delight.common.entity.MapleEntities;
 import com.hlhtstudios.maple_delight.common.fluid.MapleFluid;
 import com.hlhtstudios.maple_delight.common.item.ItemGroup;
 import com.hlhtstudios.maple_delight.common.item.MapleItems;
@@ -32,6 +34,8 @@ public class Maple_delight implements ModInitializer, TerraBlenderApi {
         MapleItems.initialize();
         MapleFluid.initialize();
         MapleFluidBlock.initialize();
+        MapleEntities.initialize();
+        Boats.initialize();
         SpecialItem.initialize();
         MapleParticle.initialize();
         MapleTrunkPlacerType.register();

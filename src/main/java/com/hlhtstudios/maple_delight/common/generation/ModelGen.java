@@ -48,5 +48,8 @@ public class ModelGen extends FabricModelProvider {
         itemModelGenerator.register(MapleItems.MAPLE_SAP_BUCKET, Models.GENERATED);
         itemModelGenerator.register(MapleItems.MAPLE_SYRUP, Models.GENERATED);
         itemModelGenerator.register(MapleItems.MAPLE_COOKIE, Models.GENERATED);
+
+        itemModelGenerator.register(MapleItems.MAPLE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(MapleItems.MAPLE_CHEST_BOAT, Models.GENERATED);
     }
 }

@@ -10,6 +10,9 @@ import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
+import static net.minecraft.registry.tag.BlockTags.CEILING_HANGING_SIGNS;
+import static net.minecraft.registry.tag.BlockTags.WALL_HANGING_SIGNS;
+
 public class BlockTagGen extends FabricTagProvider.BlockTagProvider {
     public BlockTagGen(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
@@ -90,6 +93,11 @@ public class BlockTagGen extends FabricTagProvider.BlockTagProvider {
                 .add(Maples.STANDING_MAPLE_SIGN)
                 .add(Maples.WALL_MAPLE_SIGN)
                 .add(Maples.HANGING_MAPLE_SIGN)
+                .add(Maples.WALL_HANGING_MAPLE_SIGN);
+
+        getOrCreateTagBuilder(CEILING_HANGING_SIGNS)
+                .add(Maples.HANGING_MAPLE_SIGN);
+        getOrCreateTagBuilder(WALL_HANGING_SIGNS)
                 .add(Maples.WALL_HANGING_MAPLE_SIGN);
     }
 }

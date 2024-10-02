@@ -2,6 +2,7 @@ package com.hlhtstudios.maple_delight.common.block;
 
 import com.hlhtstudios.maple_delight.Maple_delight;
 import com.hlhtstudios.maple_delight.common.block.funtional.TreeTapperBlock;
+import com.hlhtstudios.maple_delight.common.block.wood.MapleWoodTypes;
 import com.hlhtstudios.maple_delight.common.world.tree.MapleSaplingGen;
 import com.hlhtstudios.maple_delight.common.world.tree.RedMapleSaplingGen;
 import com.terraformersmc.terraform.sign.block.TerraformHangingSignBlock;
@@ -13,6 +14,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.Instrument;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.BlockItem;
@@ -122,6 +124,15 @@ public class Maples {
             new TerraformHangingSignBlock(MAPLE_HANGING_SIGN_TEXTURE, MAPLE_HANGING_SIGN_GUI_TEXTURE, FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN)));
     public static final Block WALL_HANGING_MAPLE_SIGN = Registry.register(Registries.BLOCK, new Identifier(Maple_delight.MOD_ID, "maple_wall_hanging_sign"),
             new TerraformWallHangingSignBlock(MAPLE_HANGING_SIGN_TEXTURE, MAPLE_HANGING_SIGN_GUI_TEXTURE, FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN)));
+
+//    public static final Block HANGING_MAPLE_SIGN = Registry.register(Registries.BLOCK, new Identifier(Maple_delight.MOD_ID, "maple_hanging_sign"),
+//            new HangingSignBlock(AbstractBlock.Settings.create()
+//                    .mapColor(STRIPPED_MAPLE_LOG.getDefaultMapColor()).solid()
+//                    .instrument(Instrument.BASS).noCollision().strength(1.0F).burnable(),
+//                    MapleWoodTypes.MAPLE));
+//    public static final Block WALL_HANGING_MAPLE_SIGN = Registry.register(Registries.BLOCK, new Identifier(Maple_delight.MOD_ID, "maple_wall_hanging_sign"),
+//            new WallHangingSignBlock(AbstractBlock.Settings.create().mapColor(STRIPPED_MAPLE_LOG.getDefaultMapColor()).solid().instrument(Instrument.BASS).noCollision().strength(1.0F).burnable(), MapleWoodTypes.MAPLE));
+
 
     public static final BlockFamily MAPLE_FAMILY = BlockFamilies.register(MAPLE_PLANKS)
             .sign(STANDING_MAPLE_SIGN, WALL_MAPLE_SIGN)

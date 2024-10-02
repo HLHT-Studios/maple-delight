@@ -18,34 +18,38 @@ public class ItemGroup {
                     .icon(() -> new ItemStack(Special.MAPLE_BADGE)).entries((displayContext, entries) -> {
 
                         entries.add(Maples.MAPLE_LOG);
-                        entries.add(Maples.STRIPPED_MAPLE_LOG);
                         entries.add(Maples.MAPLE_WOOD);
+                        entries.add(Maples.STRIPPED_MAPLE_LOG);
                         entries.add(Maples.STRIPPED_MAPLE_WOOD);
-                        entries.add(Maples.MAPLE_LEAVES);
+
 
                         entries.add(Maples.RED_MAPLE_LOG);
                         entries.add(Maples.STRIPPED_RED_MAPLE_LOG);
                         entries.add(Maples.STRIPPED_RED_MAPLE_WOOD);
                         entries.add(Maples.RED_MAPLE_WOOD);
-                        entries.add(Maples.RED_MAPLE_LEAVES);
-
-                        entries.add(Maples.MAPLE_SAPLING);
-                        entries.add(Maples.RED_MAPLE_SAPLING);
 
                         entries.add(Maples.MAPLE_PLANKS);
                         entries.add(Maples.MAPLE_STAIRS);
                         entries.add(Maples.MAPLE_SLAB);
-                        entries.add(Maples.MAPLE_DOOR);
-                        entries.add(Maples.MAPLE_TRAPDOOR);
                         entries.add(Maples.MAPLE_FENCE);
                         entries.add(Maples.MAPLE_FENCE_GATE);
-                        entries.add(Maples.MAPLE_BUTTON);
+                        entries.add(Maples.MAPLE_DOOR);
+                        entries.add(Maples.MAPLE_TRAPDOOR);
                         entries.add(Maples.MAPLE_PRESSURE_PLATE);
-                        entries.add(Maples.TREE_TAPPER);
+                        entries.add(Maples.MAPLE_BUTTON);
+
+                        entries.add(Maples.MAPLE_LEAVES);
+                        entries.add(Maples.RED_MAPLE_LEAVES);
+                        entries.add(Maples.MAPLE_SAPLING);
+                        entries.add(Maples.RED_MAPLE_SAPLING);
 
                         entries.add(MapleItems.MAPLE_SIGN);
                         entries.add(MapleItems.HANGING_MAPLE_SIGN);
 
+                        entries.add(MapleItems.MAPLE_BOAT);
+                        entries.add(MapleItems.MAPLE_CHEST_BOAT);
+
+                        entries.add(Maples.TREE_TAPPER);
 
                         entries.add(Special.MAPLE_BADGE);
                     }).build());
