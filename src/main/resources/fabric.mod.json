@@ -4,8 +4,13 @@
   "version": "${version}",
   "name": "Maple Delight",
   "description": "Enjoy your pancakes with the maple trees",
-  "authors": [],
-  "contact": {},
+  "authors": [
+    "HoldWind"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/maple-delight",
+    "sources": "https://github.com/HLHT-Studios/maple-delight"
+  },
   "license": "MIT",
   "icon": "icon.png",
   "environment": "*",

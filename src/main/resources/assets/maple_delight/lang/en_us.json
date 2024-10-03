@@ -60,5 +60,10 @@
   "maple_delight.advancement.maple_sugar": "You need not fear to eat",
   "maple_delight.advancement.maple_sugar.desc": "Further refining the maple sap to extract the Maple Sugar.",
   "maple_delight.advancement.maple_food": "Sticky Sweet",
-  "maple_delight.advancement.maple_food.desc": "Pour some Maple Syrup on your food."
+  "maple_delight.advancement.maple_food.desc": "Pour some Maple Syrup on your food.",
+
+
+  "modmenu.nameTranslation.maple_delight": "Maple Delight",
+  "modmenu.descriptionTranslation.maple_delight": "This is an expand mod of Farmer's Delight about the Maple.",
+  "modmenu.summaryTranslation.maple_delight": "This is an expand mod of Farmer's Delight about the Maple."
 }
