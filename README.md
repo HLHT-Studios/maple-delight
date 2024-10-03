@@ -8,7 +8,7 @@ It adds some new items and blocks around the Maple.**
 ### Maple Forest:
 Maple trees and red maple tress will naturally grow in this biome.
 
-![Mod preview]![Mod preview](https://cdn.modrinth.com/data/cached_images/ec6b4542dd8d52e510d1330a8387a71bb655a9d6.jpeg)
+![Mod preview](https://cdn.modrinth.com/data/cached_images/ec6b4542dd8d52e510d1330a8387a71bb655a9d6.jpeg)
 
 ## New items:
 - Maple Syrup: Boiling the maple sap in the pot to extract it.
@@ -22,3 +22,8 @@ Maple trees and red maple tress will naturally grow in this biome.
 - Pancakes and Maple Syrup Pancakes
 - Maple Candies
 ## If you have any idea about this mod, you can tell me on the GitHub
+
+## Functions planned in the future
+- Hazel tree and Hazelnuts
+- Canola
+- Pies
