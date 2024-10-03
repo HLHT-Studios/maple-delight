@@ -1,0 +1,38 @@
+{
+  "parent": "maple_delight:main/maple_sap",
+  "criteria": {
+    "syrup": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maple_delight:maple_syrup"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "maple_delight.advancement.maple_syrup.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "maple_delight:maple_syrup"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "maple_delight.advancement.maple_syrup"
+    }
+  },
+  "requirements": [
+    [
+      "syrup"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

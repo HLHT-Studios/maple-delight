@@ -1,0 +1,14 @@
+{
+  "type": "farmersdelight:cooking",
+  "ingredients": [
+    {
+      "item": "maple_delight:maple_sugar"
+    }
+  ],
+  "result": {
+    "item": "maple_delight:big_maple_candy",
+    "count": 1
+  },
+  "experience": 0.25,
+  "cookingtime": 200
+}

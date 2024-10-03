@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "seeds": {
+      "conditions": {},
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "maple_delight:textures/block/stripped_red_maple_log.png",
+    "description": {
+      "translate": "maple_delight.advancement.root.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "maple_delight:maple_sapling"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "maple_delight.advancement.root"
+    }
+  },
+  "requirements": [
+    [
+      "seeds"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:sugar",
+      "required": false
+    },
+    {
+      "id": "maple_delight:maple_sugar"
+    }
+  ]
+}

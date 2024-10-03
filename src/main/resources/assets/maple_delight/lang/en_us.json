@@ -28,14 +28,37 @@
   "block.maple_delight.maple_wall_hanging_sign": "Maple Hanging Sign",
   "block.maple_delight.tree_tapper": "Tree Tapper",
   "block.maple_delight.maple_badge": "Maple Badge",
+  "block.maple_delight.big_maple_candy": "Maple Candy",
+  "block.maple_delight.pancake_stack": "Pancake Stack",
+  "block.maple_delight.maple_syrup_pancake_stack": "Maple Syrup Pancake Stack",
 
   "item.maple_delight.maple_syrup": "Maple Syrup",
+  "item.maple_delight.maple_sugar": "Maple Sugar",
   "item.maple_delight.maple_sap_bucket": "Maple Sap Bucket",
   "item.maple_delight.maple_cookie": "Maple Syrup Cookie",
   "item.maple_delight.maple_pancake": "Maple Syrup Pancake",
+  "item.maple_delight.big_maple_candy": "Maple Candy",
+  "item.maple_delight.maple_candy": "Maple Candy Cube",
+  "item.maple_delight.pancake": "Pancake",
+  "item.maple_delight.maple_syrup_pancake": "Maple Syrup Pancake",
+
   "item.maple_delight.maple_boat": "Maple Boat",
   "item.maple_delight.maple_chest_boat": "Maple Chest Boat",
   "itemGroup.food": "Maple Delight Food",
 
-  "biome.maple_delight.maple_forest": "Maple Forest"
+  "biome.maple_delight.maple_forest": "Maple Forest",
+
+
+  "maple_delight.advancement.root": "Maple Delight",
+  "maple_delight.advancement.root.desc": "Your Maple life begins.",
+  "maple_delight.advancement.tree_tapper": "Tapping in",
+  "maple_delight.advancement.tree_tapper.desc": "Make your first Tree Tapper.",
+  "maple_delight.advancement.maple_sap": "Delicious in the tree",
+  "maple_delight.advancement.maple_sap.desc": "Collect your first bucket of maple sap from tree tapper.",
+  "maple_delight.advancement.maple_syrup": "Cabane à Sucre",
+  "maple_delight.advancement.maple_syrup.desc": "Refine the Maple Syrup from boiling the maple sap.",
+  "maple_delight.advancement.maple_sugar": "You need not fear to eat",
+  "maple_delight.advancement.maple_sugar.desc": "Further refining the maple sap to extract the Maple Sugar.",
+  "maple_delight.advancement.maple_food": "Sticky Sweet",
+  "maple_delight.advancement.maple_food.desc": "Pour some Maple Syrup on your food."
 }

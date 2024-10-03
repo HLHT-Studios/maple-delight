@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stack": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maple_delight:pancake_stack"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "maple_delight:maple_syrup_pancake_stack_from_pour"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_stack",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "maple_delight:maple_syrup_pancake_stack_from_pour"
+    ]
+  },
+  "sends_telemetry_event": false
+}

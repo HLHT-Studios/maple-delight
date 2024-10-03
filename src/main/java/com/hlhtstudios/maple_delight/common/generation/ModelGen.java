@@ -2,6 +2,7 @@ package com.hlhtstudios.maple_delight.common.generation;
 
 import com.hlhtstudios.maple_delight.common.block.Maples;
 import com.hlhtstudios.maple_delight.common.item.MapleItems;
+import com.hlhtstudios.maple_delight.common.item.notfood.NotFoodItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
@@ -44,12 +45,17 @@ public class ModelGen extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         // itemModelGenerator.register(MapleItems.MAPLE_SIGN, Models.GENERATED);
-        itemModelGenerator.register(MapleItems.HANGING_MAPLE_SIGN, Models.GENERATED);
+        itemModelGenerator.register(NotFoodItems.HANGING_MAPLE_SIGN, Models.GENERATED);
         itemModelGenerator.register(MapleItems.MAPLE_SAP_BUCKET, Models.GENERATED);
         itemModelGenerator.register(MapleItems.MAPLE_SYRUP, Models.GENERATED);
+        itemModelGenerator.register(MapleItems.MAPLE_SUGAR, Models.GENERATED);
         itemModelGenerator.register(MapleItems.MAPLE_COOKIE, Models.GENERATED);
+        itemModelGenerator.register(MapleItems.MAPLE_CANDY, Models.GENERATED);
+        itemModelGenerator.register(MapleItems.PANCAKE, Models.GENERATED);
+        itemModelGenerator.register(MapleItems.SYRUP_PANCAKE, Models.GENERATED);
+        // itemModelGenerator.register(MapleItems.BIG_MAPLE_CANDY, Models.GENERATED);
 
-        itemModelGenerator.register(MapleItems.MAPLE_BOAT, Models.GENERATED);
-        itemModelGenerator.register(MapleItems.MAPLE_CHEST_BOAT, Models.GENERATED);
+        itemModelGenerator.register(NotFoodItems.MAPLE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(NotFoodItems.MAPLE_CHEST_BOAT, Models.GENERATED);
     }
 }

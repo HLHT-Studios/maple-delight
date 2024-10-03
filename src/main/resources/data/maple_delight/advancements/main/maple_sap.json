@@ -1,0 +1,38 @@
+{
+  "parent": "maple_delight:main/tree_tapper",
+  "criteria": {
+    "sap": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maple_delight:maple_sap_bucket"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "maple_delight.advancement.maple_sap.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "maple_delight:maple_sap_bucket"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "maple_delight.advancement.maple_sap"
+    }
+  },
+  "requirements": [
+    [
+      "sap"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

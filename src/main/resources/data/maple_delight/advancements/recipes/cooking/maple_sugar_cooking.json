@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_syrup": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maple_delight:maple_syrup"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "maple_delight:cooking/maple_sugar_cooking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_syrup",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "maple_delight:cooking/maple_sugar_cooking"
+    ]
+  },
+  "sends_telemetry_event": false
+}

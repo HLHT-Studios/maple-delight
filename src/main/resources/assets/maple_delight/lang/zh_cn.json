@@ -1,6 +1,5 @@
 {
   "itemGroup.main": "楓之樂",
-
   "block.maple_delight.maple_log": "枫木原木",
   "block.maple_delight.maple_wood": "枫木",
   "block.maple_delight.stripped_maple_log": "去皮枫木原木",
@@ -28,14 +27,30 @@
   "block.maple_delight.maple_wall_hanging_sign": "悬挂式枫木告示牌",
   "block.maple_delight.tree_tapper": "树液采集器",
   "block.maple_delight.maple_badge": "楓之徽章",
-
+  "block.maple_delight.big_maple_candy": "Maple Candy",
+  "block.maple_delight.pancake_stack": "Pancake Stack",
+  "block.maple_delight.maple_syrup_pancake_stack": "Maple Syrup Pancake Stack",
   "item.maple_delight.maple_syrup": "枫糖浆",
+  "item.maple_delight.maple_sugar": "Maple Sugar",
   "item.maple_delight.maple_sap_bucket": "枫树树液桶",
   "item.maple_delight.maple_cookie": "枫糖饼干",
   "item.maple_delight.maple_pancake": "枫糖煎饼",
+  "item.maple_delight.big_maple_candy": "Maple Candy",
+  "item.maple_delight.maple_candy": "Maple Candy Cube",
+  "item.maple_delight.pancake": "Pancake",
+  "item.maple_delight.maple_syrup_pancake": "Maple Syrup Pancake",
   "item.maple_delight.maple_boat": "枫木船",
   "item.maple_delight.maple_chest_boat": "枫木运输船",
   "itemGroup.food": "楓之樂-食物",
-
-  "biome.maple_delight.maple_forest": "枫树林"
+  "biome.maple_delight.maple_forest": "枫树林",
+  "maple_delight.advancement.root": "Maple Delight",
+  "maple_delight.advancement.root.desc": "Your Maple life begins.",
+  "maple_delight.advancement.maple_sap": "Delicious in the tree.",
+  "maple_delight.advancement.maple_sap.desc": "Collect your first bucket of maple sap from tree tapper.",
+  "maple_delight.advancement.maple_syrup": "Cabane à Sucre",
+  "maple_delight.advancement.maple_syrup.desc": "Refine the maple syrup from boiling the maple sap.",
+  "maple_delight.advancement.maple_sugar": "You need not fear to eat.",
+  "maple_delight.advancement.maple_sugar.desc": "Further refining the maple sap to extract the maple sugar.",
+  "maple_delight.advancement.maple_food": "Sticky Sweet",
+  "maple_delight.advancement.maple_food.desc": "Pour some maple syrup on your food."
 }

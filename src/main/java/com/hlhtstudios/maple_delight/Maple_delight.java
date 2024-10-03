@@ -8,7 +8,6 @@ import com.hlhtstudios.maple_delight.common.entity.MapleEntities;
 import com.hlhtstudios.maple_delight.common.fluid.MapleFluid;
 import com.hlhtstudios.maple_delight.common.item.ItemGroup;
 import com.hlhtstudios.maple_delight.common.item.MapleItems;
-import com.hlhtstudios.maple_delight.common.item.ModItem;
 import com.hlhtstudios.maple_delight.common.item.notfood.SpecialItem;
 import com.hlhtstudios.maple_delight.common.particle.MapleParticle;
 import com.hlhtstudios.maple_delight.common.world.WorldGeneration;
@@ -30,7 +29,6 @@ public class Maple_delight implements ModInitializer, TerraBlenderApi {
         LOGGER.info("Loading Maple Delight");
         Maples.initialize();
         Special.initialize();
-        ModItem.initialize();
         MapleItems.initialize();
         MapleFluid.initialize();
         MapleFluidBlock.initialize();

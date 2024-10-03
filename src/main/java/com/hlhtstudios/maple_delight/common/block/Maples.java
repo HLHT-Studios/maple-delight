@@ -3,8 +3,11 @@ package com.hlhtstudios.maple_delight.common.block;
 import com.hlhtstudios.maple_delight.Maple_delight;
 import com.hlhtstudios.maple_delight.common.block.entity.MapleformHangingSignBlock;
 import com.hlhtstudios.maple_delight.common.block.entity.MapleformWallHangingSignBlock;
+import com.hlhtstudios.maple_delight.common.block.food.CandyBlock;
+import com.hlhtstudios.maple_delight.common.block.food.PancakeBlock;
 import com.hlhtstudios.maple_delight.common.block.funtional.TreeTapperBlock;
 import com.hlhtstudios.maple_delight.common.block.wood.MapleWoodTypes;
+import com.hlhtstudios.maple_delight.common.item.MapleItems;
 import com.hlhtstudios.maple_delight.common.world.tree.MapleSaplingGen;
 import com.hlhtstudios.maple_delight.common.world.tree.RedMapleSaplingGen;
 import com.terraformersmc.terraform.sign.block.TerraformHangingSignBlock;
@@ -56,6 +59,17 @@ public class Maples {
 
     private static Block registerBlock(String name, Block block, Rarity rarity){
         registerBItem(name, block, rarity);
+        return Registry.register(Registries.BLOCK, new Identifier(Maple_delight.MOD_ID, name), block);
+    }
+
+    private static Item registerBItemSet(String name, Block block, Item.Settings setting){
+        return Registry.register(Registries.ITEM, new Identifier(Maple_delight.MOD_ID, name),
+                new BlockItem(block, setting));
+
+    }
+
+    private static Block registerBlockSet(String name, Block block, Item.Settings setting){
+        registerBItemSet(name, block, setting);
         return Registry.register(Registries.BLOCK, new Identifier(Maple_delight.MOD_ID, name), block);
     }
 
@@ -142,5 +156,17 @@ public class Maples {
 
     public static final Block TREE_TAPPER = registerBlock("tree_tapper",
             new TreeTapperBlock(FabricBlockSettings.copyOf(Blocks.SPRUCE_PLANKS)), Rarity.COMMON);
+
+//    public static final Block BIG_MAPLE_CANDY = Registry.register(Registries.BLOCK,
+//            new Identifier(Maple_delight.MOD_ID, "big_maple_candy"),
+//            new CandyBlock(FabricBlockSettings.copyOf(Blocks.CAKE), MapleItems.MAPLE_CANDY));
+    public static final Block BIG_MAPLE_CANDY = registerBlock("big_maple_candy",
+            new CandyBlock(FabricBlockSettings.copyOf(Blocks.CAKE), MapleItems.MAPLE_CANDY), Rarity.COMMON);
+    public static final Block PANCAKE_STACK = registerBlockSet("pancake_stack",
+            new PancakeBlock(FabricBlockSettings.copyOf(Blocks.CAKE), MapleItems.PANCAKE),
+            new FabricItemSettings().maxCount(16));
+    public static final Block MAPLE_SYRUP_PANCAKE_STACK = registerBlockSet("maple_syrup_pancake_stack",
+            new PancakeBlock(FabricBlockSettings.copyOf(Blocks.CAKE), MapleItems.SYRUP_PANCAKE),
+            new FabricItemSettings().maxCount(16));
 
 }

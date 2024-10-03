@@ -23,6 +23,9 @@ public class Maple_delightClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(Maples.MAPLE_SAPLING, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(Maples.RED_MAPLE_SAPLING, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(Maples.BIG_MAPLE_CANDY, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(Maples.MAPLE_SYRUP_PANCAKE_STACK, RenderLayer.getTranslucent());
+
         SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, Maples.MAPLE_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, Maples.MAPLE_HANGING_SIGN_TEXTURE));
 

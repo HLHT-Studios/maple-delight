@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "maple_delight:big_maple_candy"
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knives"
+  },
+  "result": [
+    {
+      "count": 4,
+      "item": "maple_delight:maple_candy"
+    }
+  ]
+}

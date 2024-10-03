@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "group": "maple_syrup_pancake_stack",
+  "ingredients": [
+    {
+      "item": "maple_delight:pancake_stack"
+    },
+    {
+      "item": "maple_delight:maple_syrup"
+    }
+  ],
+  "result": {
+    "item": "maple_delight:maple_syrup_pancake_stack",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    {
+      "tag": "c:sugar"
+    },
+    {
+      "tag": "maple_delight:wheat_flour"
+    },
+    {
+      "tag": "maple_delight:wheat_flour"
+    },
+    {
+      "tag": "c:milks"
+    },
+    {
+      "tag": "c:milks"
+    },
+    {
+      "tag": "c:eggs"
+    }
+  ],
+  "result": {
+    "item": "maple_delight:pancake",
+    "count": 2
+  }
+}

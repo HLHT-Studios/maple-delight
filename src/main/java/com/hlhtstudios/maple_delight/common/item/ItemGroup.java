@@ -2,6 +2,7 @@ package com.hlhtstudios.maple_delight.common.item;
 
 import com.hlhtstudios.maple_delight.common.block.Maples;
 import com.hlhtstudios.maple_delight.Maple_delight;
+import com.hlhtstudios.maple_delight.common.item.notfood.NotFoodItems;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -43,11 +44,11 @@ public class ItemGroup {
                         entries.add(Maples.MAPLE_SAPLING);
                         entries.add(Maples.RED_MAPLE_SAPLING);
 
-                        entries.add(MapleItems.MAPLE_SIGN);
-                        entries.add(MapleItems.HANGING_MAPLE_SIGN);
+                        entries.add(NotFoodItems.MAPLE_SIGN);
+                        entries.add(NotFoodItems.HANGING_MAPLE_SIGN);
 
-                        entries.add(MapleItems.MAPLE_BOAT);
-                        entries.add(MapleItems.MAPLE_CHEST_BOAT);
+                        entries.add(NotFoodItems.MAPLE_BOAT);
+                        entries.add(NotFoodItems.MAPLE_CHEST_BOAT);
 
                         entries.add(Maples.TREE_TAPPER);
 
@@ -62,7 +63,14 @@ public class ItemGroup {
 
                         entries.add(MapleItems.MAPLE_SAP_BUCKET);
                         entries.add(MapleItems.MAPLE_SYRUP);
+                        entries.add(MapleItems.MAPLE_SUGAR);
                         entries.add(MapleItems.MAPLE_COOKIE);
+                        entries.add(Maples.BIG_MAPLE_CANDY);
+                        entries.add(MapleItems.MAPLE_CANDY);
+                        entries.add(MapleItems.PANCAKE);
+                        entries.add(MapleItems.SYRUP_PANCAKE);
+                        entries.add(Maples.PANCAKE_STACK);
+                        entries.add(Maples.MAPLE_SYRUP_PANCAKE_STACK);
 
                     }).build());
 

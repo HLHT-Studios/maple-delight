@@ -1,0 +1,64 @@
+{
+  "parent": "maple_delight:main/root",
+  "criteria": {
+    "pancake": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maple_delight:maple_syrup_pancake"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "pancake_stack": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maple_delight:maple_syrup_pancake_stack"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "cookie": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "maple_delight:maple_cookie"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "maple_delight.advancement.maple_food.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "maple_delight:maple_syrup_pancake_stack"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "maple_delight.advancement.maple_food"
+    }
+  },
+  "requirements": [
+    [
+      "pancake",
+      "pancake_stack",
+      "cookie"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

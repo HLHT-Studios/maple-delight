@@ -3,6 +3,7 @@ package com.hlhtstudios.maple_delight.common.entity;
 import com.hlhtstudios.maple_delight.Maple_delight;
 import com.hlhtstudios.maple_delight.common.block.Maples;
 import com.hlhtstudios.maple_delight.common.item.MapleItems;
+import com.hlhtstudios.maple_delight.common.item.notfood.NotFoodItems;
 import com.terraformersmc.terraform.boat.api.TerraformBoatType;
 import com.terraformersmc.terraform.boat.api.TerraformBoatTypeRegistry;
 import net.minecraft.registry.Registry;
@@ -19,8 +20,8 @@ public class Boats {
 
     public static void initialize(){
         TerraformBoatType mapleBoat = new TerraformBoatType.Builder()
-                .item(MapleItems.MAPLE_BOAT)
-                .chestItem(MapleItems.MAPLE_CHEST_BOAT)
+                .item(NotFoodItems.MAPLE_BOAT)
+                .chestItem(NotFoodItems.MAPLE_CHEST_BOAT)
                 .planks(Maples.MAPLE_PLANKS.asItem())
                 .build();
 
