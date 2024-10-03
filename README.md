@@ -6,7 +6,7 @@ It adds some new items and blocks around the Maple.**
 
 ## New biome:
 ### Maple Forest:
-Maple trees and red maple tress will naturally grow in this biome.
+Maple trees and red maple trees will naturally grow in this biome.
 
 ![Mod preview](https://cdn.modrinth.com/data/cached_images/ec6b4542dd8d52e510d1330a8387a71bb655a9d6.jpeg)
 
