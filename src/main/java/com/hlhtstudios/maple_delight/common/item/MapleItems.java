@@ -63,7 +63,7 @@ public class MapleItems {
             .build();
 
     public static final Item MAPLE_SAP_BUCKET = register("maple_sap_bucket",
-            new MilkBucketItem(new FabricItemSettings().maxCount(64).food(SAP_FOOD_COMPONENT).recipeRemainder(Items.BUCKET)));
+            new Item(new FabricItemSettings().maxCount(64).recipeRemainder(Items.BUCKET)));
     public static final Item MAPLE_SYRUP = register("maple_syrup",
             new HoneyBottleItem(new FabricItemSettings().maxCount(64).food(SYRUP_FOOD_COMPONENT).recipeRemainder(Items.GLASS_BOTTLE)));
     public static final Item MAPLE_COOKIE = register("maple_cookie",

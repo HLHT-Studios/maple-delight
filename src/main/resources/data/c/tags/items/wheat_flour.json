@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "create:flour",
+      "required": false
+    },
+    {
+      "id": "#c:flour",
+      "required": false
+    },
+    {
+      "id": "minecraft:wheat"
+    }
+  ]
+}

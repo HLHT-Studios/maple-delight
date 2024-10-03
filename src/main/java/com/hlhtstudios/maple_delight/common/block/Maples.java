@@ -1,6 +1,8 @@
 package com.hlhtstudios.maple_delight.common.block;
 
 import com.hlhtstudios.maple_delight.Maple_delight;
+import com.hlhtstudios.maple_delight.common.block.entity.MapleformHangingSignBlock;
+import com.hlhtstudios.maple_delight.common.block.entity.MapleformWallHangingSignBlock;
 import com.hlhtstudios.maple_delight.common.block.funtional.TreeTapperBlock;
 import com.hlhtstudios.maple_delight.common.block.wood.MapleWoodTypes;
 import com.hlhtstudios.maple_delight.common.world.tree.MapleSaplingGen;
@@ -121,9 +123,9 @@ public class Maples {
     public static final Block WALL_MAPLE_SIGN = Registry.register(Registries.BLOCK, new Identifier(Maple_delight.MOD_ID, "maple_wall_sign"),
             new TerraformWallSignBlock(MAPLE_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_SIGN)));
     public static final Block HANGING_MAPLE_SIGN = Registry.register(Registries.BLOCK, new Identifier(Maple_delight.MOD_ID, "maple_hanging_sign"),
-            new TerraformHangingSignBlock(MAPLE_HANGING_SIGN_TEXTURE, MAPLE_HANGING_SIGN_GUI_TEXTURE, FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN)));
+            new MapleformHangingSignBlock(MAPLE_HANGING_SIGN_TEXTURE, MAPLE_HANGING_SIGN_GUI_TEXTURE, FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN), MapleWoodTypes.MAPLE));
     public static final Block WALL_HANGING_MAPLE_SIGN = Registry.register(Registries.BLOCK, new Identifier(Maple_delight.MOD_ID, "maple_wall_hanging_sign"),
-            new TerraformWallHangingSignBlock(MAPLE_HANGING_SIGN_TEXTURE, MAPLE_HANGING_SIGN_GUI_TEXTURE, FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN)));
+            new MapleformWallHangingSignBlock(MAPLE_HANGING_SIGN_TEXTURE, MAPLE_HANGING_SIGN_GUI_TEXTURE, FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN), MapleWoodTypes.MAPLE));
 
 //    public static final Block HANGING_MAPLE_SIGN = Registry.register(Registries.BLOCK, new Identifier(Maple_delight.MOD_ID, "maple_hanging_sign"),
 //            new HangingSignBlock(AbstractBlock.Settings.create()

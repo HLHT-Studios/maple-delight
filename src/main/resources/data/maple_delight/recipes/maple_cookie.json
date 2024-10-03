@@ -6,10 +6,10 @@
       "item": "maple_delight:maple_syrup"
     },
     {
-      "item": "minecraft:wheat"
+      "tag": "c:wheat_flour"
     },
     {
-      "item": "minecraft:wheat"
+      "tag": "c:wheat_flour"
     }
   ],
   "result": {
