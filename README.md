@@ -8,14 +8,17 @@ It adds some new items and blocks around the Maple.**
 ### Maple Forest:
 Maple trees and red maple tress will naturally grow in this biome.
 
-![Mod preview](https://cdn.modrinth.com/data/cached_images/00874cc3a5cb82357aa35bbf12810b676ee9d8a6.jpeg)
+![Mod preview]![Mod preview](https://cdn.modrinth.com/data/cached_images/ec6b4542dd8d52e510d1330a8387a71bb655a9d6.jpeg)
 
 ## New items:
-- Maple syrup: Boiling the maple sap in the pot to extract it.
-- Maple sap bucket: Use bucket to collect maple sap from tree tapper.
+- Maple Syrup: Boiling the maple sap in the pot to extract it.
+- Maple Sap Bucket: Use bucket to collect maple sap from tree tapper.
+- Maple Sugar: Sugar that refined from maple sap.
 ## New blocks:
 - Maple wood blocks
 - Tree tapper: use to get maple sap from maple trees.
 ## New food:
-- Some new food with maple syrup. (Still in progress)
+- Maple Cookies
+- Pancakes and Maple Syrup Pancakes
+- Maple Candies
 ## If you have any idea about this mod, you can tell me on the GitHub
